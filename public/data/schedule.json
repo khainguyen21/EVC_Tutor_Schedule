@@ -1,0 +1,1015 @@
+{
+  "tutors": [
+    {
+      "name": "Thanh Tam Ngo",
+      "subjects": ["Accounting 1A", "Accounting 1B"],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "14:00",
+          "endTime": "17:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "17:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "14:00",
+          "endTime": "17:00",
+          "location": "LE-237"
+        }
+      ]
+    },
+    {
+      "name": "Angel Martinez",
+      "subjects": [
+        "Art 090",
+        "English 1A",
+        "History 17A",
+        "History 17B",
+        "Spanish"
+      ],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "09:00",
+          "endTime": "10:30",
+          "location": "LE-237"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "09:00",
+          "endTime": "12:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "12:15",
+          "endTime": "14:15",
+          "location": "LE-237"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "09:00",
+          "endTime": "12:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Friday",
+          "startTime": "09:00",
+          "endTime": "13:00",
+          "location": "LE-237"
+        }
+      ]
+    },
+    {
+      "name": "Professor Rahbar",
+      "type": "professor",
+      "subjects": ["Astronomy", "Physics"],
+      "schedule": [
+        {
+          "day": "Thursday",
+          "startTime": "12:00",
+          "endTime": "14:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Professor Ernst",
+      "type": "professor",
+      "subjects": ["Biology"],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "12:15",
+          "endTime": "13:15",
+          "location": "SQ-231"
+        }
+      ]
+    },
+    {
+      "name": "Professor Kurushima",
+      "type": "professor",
+      "subjects": ["Biology"],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "13:15",
+          "endTime": "15:00",
+          "location": "SQ-231"
+        }
+      ]
+    },
+    {
+      "name": "Professor La",
+      "type": "professor",
+      "subjects": ["Biology"],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "12:00",
+          "endTime": "14:00",
+          "location": "SQ-231"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "12:00",
+          "endTime": "14:00",
+          "location": "SQ-231"
+        }
+      ]
+    },
+    {
+      "name": "Professor Pang",
+      "type": "professor",
+      "subjects": ["Biology"],
+      "schedule": [
+        {
+          "day": "Wednesday",
+          "startTime": "12:30",
+          "endTime": "14:00",
+          "location": "SQ-231"
+        }
+      ]
+    },
+    {
+      "name": "Professor Metzger",
+      "type": "professor",
+      "subjects": ["Biology"],
+      "schedule": [
+        {
+          "day": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "15:00",
+          "location": "SQ-231"
+        }
+      ]
+    },
+    {
+      "name": "Brandon Ong",
+      "subjects": ["BIO 020", "BIO 021", "BIO 071"],
+      "schedule": [
+        {
+          "day": "Wednesday",
+          "startTime": "10:00",
+          "endTime": "15:00",
+          "location": "SQ-231"
+        }
+      ]
+    },
+    {
+      "name": "Katherine Dang",
+      "subjects": ["BIO 020", "BIO 021", "BIO 071"],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "10:00",
+          "endTime": "15:00",
+          "location": "SQ-231"
+        },
+        {
+          "day": "Friday",
+          "startTime": "09:00",
+          "endTime": "13:00",
+          "location": "SQ-231"
+        }
+      ]
+    },
+    {
+      "name": "Gabriela Choy",
+      "subjects": ["BIO 020", "BIO 021", "BIO 071"],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "location": "SQ-231"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "10:00",
+          "endTime": "12:00",
+          "location": "SQ-231"
+        }
+      ]
+    },
+    {
+      "name": "Cao Le",
+      "subjects": ["BIO 020", "BIO 021", "BIO 071"],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "12:00",
+          "endTime": "15:30",
+          "location": "SQ-231"
+        }
+      ]
+    },
+    {
+      "name": "Professor Medina",
+      "type": "professor",
+      "subjects": ["Chemistry"],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "14:00",
+          "endTime": "15:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Professor Bairu",
+      "type": "professor",
+      "subjects": ["Chemistry"],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "13:30",
+          "endTime": "15:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Professor Srinivasan",
+      "type": "professor",
+      "subjects": ["Chemistry"],
+      "schedule": [
+        {
+          "day": "Wednesday",
+          "startTime": "09:30",
+          "endTime": "11:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Ngoc Le",
+      "subjects": [
+        "CHEM 015",
+        "CHEM 30A",
+        "MATH 020",
+        "MATH 021",
+        "MATH 022",
+        "MATH 025",
+        "MATH 066",
+        "MATH 067",
+        "MATH 071",
+        "MATH 072"
+      ],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "16:00",
+          "endTime": "20:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "16:00",
+          "endTime": "20:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Nhi Do",
+      "subjects": [
+        "CHEM 015",
+        "CHEM 30A",
+        "CHEM 1A",
+        "CHEM 1B",
+        "MATH 020",
+        "MATH 021",
+        "MATH 022",
+        "MATH 025",
+        "MATH 066",
+        "MATH 071",
+        "PHYSICS 2A",
+        "PHYSICS 2B"
+      ],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "12:30",
+          "endTime": "15:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "17:30",
+          "endTime": "19:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Friday",
+          "startTime": "09:00",
+          "endTime": "13:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Minh-Tam Le",
+      "subjects": [
+        "CHEM 015",
+        "CHEM 30A",
+        "CHEM 1A",
+        "MATH 020",
+        "MATH 021",
+        "MATH 022",
+        "MATH 025",
+        "MATH 062",
+        "MATH 071"
+      ],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "09:00",
+          "endTime": "12:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "09:00",
+          "endTime": "12:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Professor Kang",
+      "type": "professor",
+      "subjects": ["Mathematics", "Computer Science"],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Professor Jensen",
+      "type": "professor",
+      "subjects": ["Mathematics", "Computer Science"],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "14:00",
+          "endTime": "15:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "11:00",
+          "endTime": "12:30",
+          "location": "MS-112"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "15:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Murtaza Hussein",
+      "subjects": [
+        "COMSC 075",
+        "MATH 020",
+        "MATH 021",
+        "MATH 022",
+        "MATH 023",
+        "MATH 024",
+        "MATH 025",
+        "MATH 066",
+        "MATH 067",
+        "MATH 071",
+        "MATH 072",
+        "MATH 079"
+      ],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "12:30",
+          "endTime": "15:30",
+          "location": "MS-112"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "09:00",
+          "endTime": "13:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Hong-Khai Nguyen",
+      "subjects": ["COMSC 028", "COMSC 075", "COMSC 076"],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "09:45",
+          "endTime": "12:45",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Ngoc-Han Tran",
+      "subjects": [
+        "COMSC 075",
+        "COMSC 076",
+        "MATH 020",
+        "MATH 021",
+        "MATH 022",
+        "MATH 023",
+        "MATH 024",
+        "MATH 025",
+        "MATH 062",
+        "MATH 066",
+        "MATH 067",
+        "MATH 071",
+        "MATH 072",
+        "MATH 073",
+        "PHYSICS 7A"
+      ],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "15:00",
+          "endTime": "18:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "12:30",
+          "endTime": "13:45",
+          "location": "MS-112"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "13:00",
+          "endTime": "17:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "09:00",
+          "endTime": "10:30",
+          "location": "MS-112"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "11:30",
+          "endTime": "12:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Saumya Goswami",
+      "subjects": [
+        "COMSC 075",
+        "COMSC 076",
+        "COMSC 079C",
+        "MATH 062",
+        "MATH 066",
+        "MATH 067",
+        "MATH 071",
+        "MATH 072",
+        "MATH 073",
+        "MATH 078",
+        "STATS C1000",
+        "PHYSICS 7A",
+        "PHYSICS 7B"
+      ],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "09:00",
+          "endTime": "12:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Arthur Duong",
+      "subjects": ["English 1A", "Music", "Vietnamese"],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "11:00",
+          "endTime": "14:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "09:00",
+          "endTime": "13:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "14:00",
+          "endTime": "17:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "09:00",
+          "endTime": "17:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "09:00",
+          "endTime": "13:00",
+          "location": "LE-237"
+        }
+      ]
+    },
+    {
+      "name": "Quang Le",
+      "subjects": ["English 1A", "Psychology 1", "Psychology 92"],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "09:00",
+          "endTime": "11:30",
+          "location": "LE-237"
+        },
+        {
+          "day": "Monday",
+          "startTime": "14:30",
+          "endTime": "17:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "15:00",
+          "endTime": "17:00",
+          "location": "LE-237"
+        }
+      ]
+    },
+    {
+      "name": "Mia Delgadillo",
+      "subjects": ["English 1A", "English 1B", "English 1C"],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "13:00",
+          "endTime": "17:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "13:00",
+          "endTime": "17:00",
+          "location": "LE-237"
+        }
+      ]
+    },
+    {
+      "name": "Nguyen Nguyen",
+      "subjects": ["ESL"],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "13:00",
+          "endTime": "15:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "13:00",
+          "endTime": "15:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "09:00",
+          "endTime": "10:30",
+          "location": "LE-237"
+        },
+        {
+          "day": "Friday",
+          "startTime": "09:00",
+          "endTime": "13:00",
+          "location": "LE-237"
+        }
+      ]
+    },
+    {
+      "name": "Professor Vu",
+      "type": "professor",
+      "subjects": ["Mathematics"],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "12:00",
+          "endTime": "14:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Professor Sundaresan",
+      "type": "professor",
+      "subjects": ["Mathematics"],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "12:00",
+          "endTime": "13:30",
+          "location": "MS-112"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "12:30",
+          "endTime": "14:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Robert Yav",
+      "type": "staff",
+      "role": "Math Instructional Assistant, Lab Lead",
+      "subjects": ["All Math", "STAT C1000"],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "13:00",
+          "endTime": "20:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "17:00",
+          "endTime": "20:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "13:00",
+          "endTime": "20:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "17:00",
+          "endTime": "20:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Jorge Vallin",
+      "type": "staff",
+      "role": "Math Instructional Assistant",
+      "subjects": ["MATH up to 072", "STAT C1000"],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "09:00",
+          "endTime": "18:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "09:00",
+          "endTime": "18:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "09:00",
+          "endTime": "18:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "09:00",
+          "endTime": "18:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Friday",
+          "startTime": "09:00",
+          "endTime": "13:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Bryan Pham",
+      "type": "staff",
+      "role": "MSRC/Program Coordinator",
+      "subjects": ["MATH", "STAT C1000"],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "09:00",
+          "endTime": "18:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "09:00",
+          "endTime": "18:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "09:00",
+          "endTime": "18:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "09:00",
+          "endTime": "18:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Nguyen Truong",
+      "subjects": [
+        "MATH 062",
+        "MATH 066",
+        "MATH 067",
+        "MATH 071",
+        "MATH 072",
+        "MATH 073"
+      ],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "14:45",
+          "endTime": "16:45",
+          "location": "MS-112"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "15:45",
+          "endTime": "16:45",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Ngoc Quach",
+      "subjects": [
+        "MATH 021",
+        "MATH 022",
+        "MATH 025",
+        "MATH 062",
+        "MATH 066",
+        "MATH 071"
+      ],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "13:45",
+          "endTime": "15:45",
+          "location": "MS-112"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "12:45",
+          "endTime": "15:45",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Dang Doan",
+      "subjects": [
+        "MATH 020",
+        "MATH 021",
+        "MATH 022",
+        "MATH 025",
+        "STAT C1000",
+        "MATH 066",
+        "MATH 071"
+      ],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "09:00",
+          "endTime": "12:30",
+          "location": "MS-112"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "14:00",
+          "endTime": "17:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "09:00",
+          "endTime": "13:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "14:00",
+          "endTime": "17:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Thu Van",
+      "subjects": ["STAT C1000"],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "16:00",
+          "endTime": "20:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "16:00",
+          "endTime": "20:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Thanh-Dat Duong",
+      "subjects": [
+        "MATH 020",
+        "MATH 021",
+        "MATH 022",
+        "MATH 023",
+        "MATH 024",
+        "MATH 025",
+        "MATH 066",
+        "MATH 067",
+        "MATH 071",
+        "MATH 072"
+      ],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "16:00",
+          "endTime": "20:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "16:00",
+          "endTime": "20:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Tuyen Pham",
+      "subjects": ["STAT C1000"],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "09:00",
+          "endTime": "11:30",
+          "location": "MS-112"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "09:00",
+          "endTime": "11:30",
+          "location": "MS-112"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "17:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Friday",
+          "startTime": "09:00",
+          "endTime": "13:00",
+          "location": "MS-112"
+        }
+      ]
+    },
+    {
+      "name": "Hai Tran",
+      "subjects": ["Open Computer Lab"],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "09:00",
+          "endTime": "11:45",
+          "location": "LE-237"
+        },
+        {
+          "day": "Monday",
+          "startTime": "14:00",
+          "endTime": "17:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "09:00",
+          "endTime": "11:45",
+          "location": "LE-237"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "17:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "14:00",
+          "endTime": "17:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Friday",
+          "startTime": "09:00",
+          "endTime": "13:00",
+          "location": "LE-237"
+        }
+      ]
+    },
+    {
+      "name": "Kenya Reyes",
+      "subjects": ["Open Computer Lab"],
+      "schedule": [
+        {
+          "day": "Monday",
+          "startTime": "11:45",
+          "endTime": "14:45",
+          "location": "LE-237"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "15:30",
+          "endTime": "17:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "09:00",
+          "endTime": "14:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "15:30",
+          "endTime": "17:00",
+          "location": "LE-237"
+        }
+      ]
+    },
+    {
+      "name": "Lexy Alvarado",
+      "subjects": ["Open Computer Lab"],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "09:00",
+          "endTime": "12:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "13:00",
+          "endTime": "17:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "09:00",
+          "endTime": "13:00",
+          "location": "LE-237"
+        }
+      ]
+    }
+  ]
+}
