@@ -1,6 +1,6 @@
 # EVC Tutor Schedule - Development Phases
 
-> **Last Updated:** Jan 21, 2026  
+> **Last Updated:** Jan 23, 2026  
 > **Timeline:** Jan 4–26 (intensive) → Jan 27+ (school mode, limited hours)
 
 ---
@@ -145,12 +145,12 @@
 - [x] Migrate styles.css to src/index.css with color-coded location badges
 - [x] Create `<LocationBadge />` component (Props practice)
 - [x] Create `<TutorCard />` component (Rendering Lists)
-- [ ] Create `<FilterBar />` component (Lifting State Up)
-- [ ] Update App.tsx with useState, useEffect, and filtering logic
+- [x] Create `<FilterBar />` component (Lifting State Up)
+- [x] Update App.tsx with useState, useEffect, and filtering logic
 - [ ] Test filtering functionality in browser
 - [ ] Add Dark Mode toggle (optional polish)
 
-**Status:** 🔄 50% Complete — React migration in progress (Jan 21)
+**Status:** 🔄 75% Complete — React filtering logic implemented (Jan 23)
 
 ---
 

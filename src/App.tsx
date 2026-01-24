@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect, useState } from "react";
+import { type Tutor, type Day } from "./types";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  // State for the tutor data
+  // Without the [], tutors starts as undefined,
+  //  which will cause .filter() to crash.
+  // By starting with an empty array [],
+  //  your code works even before the data loads.
+  const [tutors, setTutors] = useState<Tutor[]>([]);
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+  // State for the filters
+  const [courseFilter, setCourseFilter] = useState("");
+  const [dayFilter, setDayFilter] = useState<Day>("");
 
-export default App
+  // Fetch data on component mount
+  useEffect(() => {
+    fetch("/data/schedule.json")
+      .then((response) => response.json())
+      .then((data) => setTutors(data.tutors))
+      .catch((error) => console.error(error));
+  }, []);
+
+  // Filter the tutors based on the selected filters (course and day)
+  const filteredTutors = tutors?.filter((tutor) => {
+    const matchCourse = courseFilter
+      ? tutor.subjects.some((s) =>
+          s.toLowerCase().includes(courseFilter.toLowerCase()),
+        )
+      : true;
+    const matchDay = dayFilter
+      ? tutor.schedule.some((slot) => slot.day === dayFilter)
+      : true;
+    return matchCourse && matchDay;
+  });
+
+  return <div>App</div>;
+};
+
+export default App;

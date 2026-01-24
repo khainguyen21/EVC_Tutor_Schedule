@@ -1,6 +1,6 @@
 export type Location = 'LE-237' | 'MS-112' | 'Online';
 
-export type Day = 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday';
+export type Day = 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday' | '';
 
 export interface ScheduleEntry {
     day: Day, 
@@ -20,4 +20,3 @@ export interface Tutor {
 export interface ScheduleData {
     tutor: Tutor[]
 }
-
