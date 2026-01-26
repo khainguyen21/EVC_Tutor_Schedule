@@ -1,6 +1,6 @@
 # EVC Tutor Schedule - Development Phases
 
-> **Last Updated:** Jan 23, 2026  
+> **Last Updated:** Jan 25, 2026  
 > **Timeline:** Jan 4–26 (intensive) → Jan 27+ (school mode, limited hours)
 
 ---
@@ -146,11 +146,18 @@
 - [x] Create `<LocationBadge />` component (Props practice)
 - [x] Create `<TutorCard />` component (Rendering Lists)
 - [x] Create `<FilterBar />` component (Lifting State Up)
-- [x] Update App.tsx with useState, useEffect, and filtering logic
-- [ ] Test filtering functionality in browser
-- [ ] Add Dark Mode toggle (optional polish)
+- [x] Create `<SubjectSection />` component (Subject grouping)
+- [x] Create subject mapping utilities (getFieldFromSubject, formatSubjectsForDisplay)
+- [x] Update App.tsx with subject grouping and advanced filtering logic
+- [x] Test filtering functionality in browser (course + day filters working)
+- [x] Implement compact subject formatting (e.g., "MATH 020-025, 066/67")
+- [ ] Create `<Header />` component with dark mode toggle
+- [ ] Create `<Footer />` component
+- [ ] Create reusable `<InfoSection />` component
+- [ ] Add location subtitles to subject headers
+- [ ] Deploy React app to Netlify/Vercel
 
-**Status:** 🔄 75% Complete — React filtering logic implemented (Jan 23)
+**Status:** 🔄 85% Complete — Core filtering complete, layout components pending (Jan 25)
 
 ---
 

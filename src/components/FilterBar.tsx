@@ -27,12 +27,20 @@ const FilterBar = ({
         >
           <option value="">All Courses</option>
           <option value="Accounting">Accounting</option>
-          <option value="Math">Math</option>
+          <option value="Art">Art</option>
           <option value="Biology">Biology</option>
           <option value="Chemistry">Chemistry</option>
           <option value="Computer Science">Computer Science</option>
           <option value="English">English</option>
-          <option value="Physic">Physic</option>
+          <option value="History">History</option>
+          <option value="Math">Math</option>
+          <option value="Music">Music</option>
+          <option value="Physics">Physics</option>
+          <option value="Psychology">Psychology</option>
+          <option value="Spanish">Spanish</option>
+          <option value="Vietnamese">Vietnamese</option>
+          <option value="Open Computer Lab">Open Computer Lab</option>
+          <option value="Other">Other</option>
         </select>
       </div>
 
