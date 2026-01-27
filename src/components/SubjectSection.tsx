@@ -13,7 +13,7 @@ const SubjectSection = ({ fieldName, tutors }: Props) => {
       <div className="subject__title">{fieldName}</div>
       <div className="subject__cards">
         {tutors.map((tutor) => {
-          // Only show tutors have subjects in the field
+          // Only show tutors have subjects in current field
           const displaySubjects = filterSubjectsByField(
             tutor.subjects,
             fieldName,

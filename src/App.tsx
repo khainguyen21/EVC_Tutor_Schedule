@@ -3,6 +3,7 @@ import { type Tutor, type Day } from "./types";
 import FilterBar from "./components/FilterBar";
 import SubjectSection from "./components/SubjectSection";
 import { getUniqueFields } from "./utils/subjectMapping";
+import Header from "./components/Header";
 
 const App = () => {
   const [tutors, setTutors] = useState<Tutor[]>([]);
@@ -54,6 +55,7 @@ const App = () => {
   // console.log(fieldsToShow)
   return (
     <div className="container">
+      <Header/>
       <div>
         <FilterBar
           selectedCourse={courseFilter}

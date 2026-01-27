@@ -253,6 +253,7 @@ body {
   background: var(--card-background);
   cursor: pointer;
   opacity: 0.7;
+  color: var(--text-primary);
 }
 
 .filter__note {
