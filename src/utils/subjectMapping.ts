@@ -163,3 +163,30 @@ function compactConsecutiveNumbers(codes: string[]): string {
     }
   }).join(', ');
 }
+
+/**
+ * Get the primary tutoring location for a subject field
+ * Returns location name and room number
+ * Example: "Computer Science" → "Math & Science Resource Center (MSRC), MS-112"
+ */
+export function getLocationForField(field: string): string {
+  const locationMap: Record<string, string> = {
+    "Math": "MS-112 Math & Science Resource Center (MS3 Building)",
+    "Computer Science": "MS-112 Math & Science Resource Center (MS3 Building)",
+    "Physics": "MS-112 Math & Science Resource Center (MS3 Building)",
+    "Chemistry": "MS-112 Math & Science Resource Center (MS3 Building)",
+    "Biology": "SQ-231 Biology Lab (Sequoia Building)",
+    "English": "LE-237 Campus Tutoring (Library Building)",
+    "Accounting": "LE-237 Campus Tutoring (Library Building)",
+    "Spanish": "LE-237 Campus Tutoring (Library Building)",
+    "Vietnamese": "LE-237 Campus Tutoring (Library Building)",
+    "History": "LE-237 Campus Tutoring (Library Building)",
+    "Psychology": "LE-237 Campus Tutoring (Library Building)",
+    "Art": "LE-237 Campus Tutoring (Library Building)",
+    "Music": "LE-237 Campus Tutoring (Library Building)",
+    "Open Computer Lab": "MS-112 Math & Science Resource Center (MS3 Building)",
+    "Other": "Various Locations"
+  };
+
+  return locationMap[field] || "See schedule for location";
+}

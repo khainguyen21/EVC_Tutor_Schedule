@@ -1,5 +1,8 @@
 import type { Tutor } from "../types";
-import { filterSubjectsByField } from "../utils/subjectMapping";
+import {
+  filterSubjectsByField,
+  getLocationForField,
+} from "../utils/subjectMapping";
 import TutorCard from "./TutorCard";
 
 interface Props {
@@ -8,9 +11,12 @@ interface Props {
 }
 
 const SubjectSection = ({ fieldName, tutors }: Props) => {
+  const location = getLocationForField(fieldName);
+
   return (
     <section className="subject">
       <div className="subject__title">{fieldName}</div>
+      <p className="subject__note">{location}</p>
       <div className="subject__cards">
         {tutors.map((tutor) => {
           // Only show tutors have subjects in current field
