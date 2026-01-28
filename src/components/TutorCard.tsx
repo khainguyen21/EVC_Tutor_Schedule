@@ -25,7 +25,7 @@ const TutorCard = ({ tutor, displaySubjects }: Props) => {
               <span className="schedule-item__time">
                 {slot.startTime} - {slot.endTime}
               </span>
-              <LocationBadge location={slot.location}></LocationBadge>
+              <LocationBadge location={slot.location}/>
             </div>
           );
         })}

@@ -18,5 +18,5 @@ export interface Tutor {
 }
 
 export interface ScheduleData {
-    tutor: Tutor[]
+    tutors: Tutor[]
 }
