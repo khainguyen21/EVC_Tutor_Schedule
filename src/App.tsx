@@ -88,9 +88,9 @@ const App = () => {
             <>
               <strong>Spring 2026 Drop-In Tutoring</strong> – Students can
               access our EVC tutoring team during the below drop-in days and
-              times through February 2nd through May 22nd, 2026. Tutors are
-              available for drop-in tutoring on a first come, first served
-              basis.
+              times through <strong>February 2nd</strong> through{" "}
+              <strong>May 22nd, 2026</strong>. Tutors are available for drop-in
+              tutoring on a first come, first served basis.
             </>
           }
         >
