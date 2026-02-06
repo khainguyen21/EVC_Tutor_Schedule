@@ -11,9 +11,8 @@ const LocationBadge = ({ location }: Props) => {
         return "location-text--library";
       case "MS-112":
         return "location-text--msrc";
-      case "Online":
-        return "location-text--online";
-
+      case "SQ-231":
+        return "location-text--bio";
       default:
         return "";
     }

@@ -1,3 +1,5 @@
+import type { Tutor } from "../types";
+
 /**
  * Maps individual subject strings to their field/category
  * Used to group tutors by subject area
@@ -8,7 +10,11 @@ export function getFieldFromSubject(subject: string): string {
 
   if (upperSubject.includes('ACCOUNTING')) return 'Accounting';
   
+  if (upperSubject.includes('ART')) return 'Art';
+
   if (upperSubject.includes('BIO') || upperSubject === 'BIOLOGY') return 'Biology';
+
+  if (upperSubject.includes('BUS') || upperSubject.includes('BIS')) return 'Business';
   
   if (upperSubject.includes('CHEM')) return 'Chemistry';
   
@@ -22,15 +28,15 @@ export function getFieldFromSubject(subject: string): string {
   
   if (upperSubject.includes('ENGLISH') || upperSubject === 'ESL') return 'English';
   
-  if (upperSubject === 'PHYSICS' || upperSubject === 'ASTRONOMY' || upperSubject.includes('PHYSIC')) return 'Physics';
-  
-  if (upperSubject.includes('ART')) return 'Art';
+  if (upperSubject === 'PHYSICS' || upperSubject.includes('PHYSIC')) return 'Physics';
   
   if (upperSubject.includes('HISTORY')) return 'History';
   
   if (upperSubject.includes('PSYCHOLOGY')) return 'Psychology';
   
   if (upperSubject === 'SPANISH') return 'Spanish';
+
+  if (upperSubject.includes('SOC')) return 'Sociology';
   
   if (upperSubject === 'MUSIC') return 'Music';
   
@@ -38,7 +44,7 @@ export function getFieldFromSubject(subject: string): string {
   
   if (upperSubject.includes('OPEN COMPUTER LAB')) return 'Open Computer Lab';
 
-  return 'Other';
+  return subject;
 }
 // getFieldFromSubject("COMSC 075")        // → "Computer Science"
 // getFieldFromSubject("Math 1A")          // → "Math"
@@ -171,10 +177,13 @@ function compactConsecutiveNumbers(codes: string[]): string {
  */
 export function getLocationForField(field: string): string {
   const locationMap: Record<string, string> = {
+    "Astronomy": "MS-112 Math & Science Resource Center (MS3 Building)",
     "Math": "MS-112 Math & Science Resource Center (MS3 Building)",
     "Computer Science": "MS-112 Math & Science Resource Center (MS3 Building)",
     "Physics": "MS-112 Math & Science Resource Center (MS3 Building)",
     "Chemistry": "MS-112 Math & Science Resource Center (MS3 Building)",
+    "Open Computer Lab": "MS-112 Math & Science Resource Center (MS3 Building)",
+    "Sociology": "MS-112 Math & Science Resource Center (MS3 Building)",
     "Biology": "SQ-231 Biology Lab (Sequoia Building)",
     "English": "LE-237 Campus Tutoring (Library Building)",
     "Accounting": "LE-237 Campus Tutoring (Library Building)",
@@ -184,9 +193,39 @@ export function getLocationForField(field: string): string {
     "Psychology": "LE-237 Campus Tutoring (Library Building)",
     "Art": "LE-237 Campus Tutoring (Library Building)",
     "Music": "LE-237 Campus Tutoring (Library Building)",
-    "Open Computer Lab": "MS-112 Math & Science Resource Center (MS3 Building)",
+    "Business": "LE-237 Campus Tutoring (Library Building)",
     "Other": "Various Locations"
   };
 
   return locationMap[field] || "See schedule for location";
+}
+
+/**
+ * Sort tutors by type priority: professors first, then staff, then regular tutors
+ * Example: [regular, professor, staff] → [professor, staff, regular]
+ */
+export function sortTutorsByType(tutors: Tutor[]): Tutor[] {
+   //Using [...tutors] creates a copy, keeping the original unchanged
+   //This prevents unexpected bugs elsewhere in your code
+    return [...tutors].sort((a, b) => {
+        const getPriority = (tutor: Tutor) => {
+          if (tutor.type === 'professor') return 1;
+          if (tutor.type === 'staff') return 2;
+          return 3;
+        }
+
+        return getPriority(a) - getPriority(b);
+    })
+}
+
+/**
+ * Sort subjects alphabetically
+ * Example: ["Math", "Computer Science", "Physics"] → ["Computer Science", "Math", "Physics"]
+ */
+export function sortSubjectAlphabetically(subjects: string[]) {
+    return [...subjects].sort((a, b) => {
+      if (a.toLowerCase() < b.toLowerCase()) return -1;
+      if (a.toLowerCase() > b.toLowerCase()) return 1;
+      return 0;
+    })
 }

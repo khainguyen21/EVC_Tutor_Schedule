@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import { type Tutor, type Day } from "./types";
 import FilterBar from "./components/FilterBar";
 import SubjectSection from "./components/SubjectSection";
-import { getUniqueFields } from "./utils/subjectMapping";
+import {
+  getUniqueFields,
+  sortSubjectAlphabetically,
+} from "./utils/subjectMapping";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import InfoSection from "./components/InfoSection";
@@ -56,6 +59,11 @@ const App = () => {
       )
     : Object.keys(groupedByField);
 
+  console.log(Object.keys(groupedByField));
+  // Sort fields alphabetically
+  const sortedFields = sortSubjectAlphabetically(Object.keys(groupedByField));
+  const sortedFieldsToShow = sortSubjectAlphabetically(fieldsToShow);
+
   // Functions to handle state updates
   const handleCourseChange = (course: string) => {
     setCourseFilter(course);
@@ -75,7 +83,15 @@ const App = () => {
       <main>
         <InfoSection
           title="EVC Campus Tutoring Drop-In Schedule & NetTutor Online Tutoring"
-          intro="Fall 2025 Drop-In Tutoring – Students can access our EVC tutoring team during the below drop-in days and times through December 11th, 2025. Tutors are available for drop-in tutoring on a first come, first served basis."
+          intro={
+            <>
+              <strong>Spring 2026 Drop-In Tutoring</strong> – Students can
+              access our EVC tutoring team during the below drop-in days and
+              times through February 2nd through May 22nd, 2026. Tutors are
+              available for drop-in tutoring on a first come, first served
+              basis.
+            </>
+          }
         >
           <h3
             style={{
@@ -181,6 +197,7 @@ const App = () => {
           <FilterBar
             selectedCourse={courseFilter}
             selectedDay={dayFilter}
+            subjects={sortedFields}
             onCourseChange={handleCourseChange}
             onDayChange={handleDayChange}
           />
@@ -192,10 +209,10 @@ const App = () => {
             </div>
           ) : (
             <section className={filtering ? "schedule filtering" : "schedule"}>
-              {fieldsToShow.length > 0 ? (
+              {sortedFieldsToShow.length > 0 ? (
                 (() => {
                   // Render all sections and check if any tutors match the day filter
-                  const sections = fieldsToShow.map((field) => {
+                  const sections = sortedFieldsToShow.map((field) => {
                     // Filter tutors by day for this field
                     const tutorsInField = groupedByField[field];
                     const filteredTutors = dayFilter
@@ -247,7 +264,7 @@ const App = () => {
         <InfoSection
           title="Become an EVC Tutor"
           intro={
-            "Now hiring student tutors for Fall 2025! This is a great way to refresh your knowledge, earn money, help fellow students, and work a weekly schedule based on YOUR AVAILABILITY."
+            "Now hiring student tutors for Spring 2026! This is a great way to refresh your knowledge, earn money, help fellow students, and work a weekly schedule based on YOUR AVAILABILITY."
           }
         >
           <div className="info-section__highlight">

@@ -34,7 +34,7 @@
   --loc-library-text: #ffffff;
   --loc-msrc-bg: #0891b2;          /* Cyan for Math/Science */
   --loc-msrc-text: #ffffff;
-  --loc-bio-bg: #16a34a;           /* Green for Biology */
+  --loc-bio-bg: #139241;           /* Green for Biology */
   --loc-bio-text: #ffffff;
   --loc-online-bg: #7c3aed;        /* Violet for NetTutor */
   --loc-online-text: #ffffff;
@@ -82,7 +82,7 @@
   /* Location Colors Dark Mode */
   --loc-library-bg: #6366f1;
   --loc-msrc-bg: #06b6d4;
-  --loc-bio-bg: #22c55e;
+  --loc-bio-bg: #20ba58;
   --loc-online-bg: #8b5cf6;
   
   /* Borders & Shadows */

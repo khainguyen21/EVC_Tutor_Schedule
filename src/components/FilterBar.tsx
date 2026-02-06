@@ -3,6 +3,7 @@ import type { Day } from "../types";
 interface Props {
   selectedCourse: string;
   selectedDay: Day;
+  subjects: string[];
   onCourseChange: (course: string) => void;
   onDayChange: (day: Day) => void;
 }
@@ -10,6 +11,7 @@ interface Props {
 const FilterBar = ({
   selectedCourse,
   selectedDay,
+  subjects,
   onCourseChange,
   onDayChange,
 }: Props) => {
@@ -26,21 +28,9 @@ const FilterBar = ({
           onChange={(e) => onCourseChange(e.target.value)}
         >
           <option value="">All Courses</option>
-          <option value="Accounting">Accounting</option>
-          <option value="Art">Art</option>
-          <option value="Biology">Biology</option>
-          <option value="Chemistry">Chemistry</option>
-          <option value="Computer Science">Computer Science</option>
-          <option value="English">English</option>
-          <option value="History">History</option>
-          <option value="Math">Math</option>
-          <option value="Music">Music</option>
-          <option value="Physics">Physics</option>
-          <option value="Psychology">Psychology</option>
-          <option value="Spanish">Spanish</option>
-          <option value="Vietnamese">Vietnamese</option>
-          <option value="Open Computer Lab">Open Computer Lab</option>
-          <option value="Other">Other</option>
+          {subjects.map((subject) => {
+            return <option value={subject}>{subject}</option> 
+          })}
         </select>
       </div>
 

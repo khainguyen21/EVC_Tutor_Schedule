@@ -2,7 +2,7 @@ import React from "react";
 
 interface InfoSectionProps {
   title: string;
-  intro?: string;
+  intro?: React.ReactNode;
   children: React.ReactNode;
 }
 
