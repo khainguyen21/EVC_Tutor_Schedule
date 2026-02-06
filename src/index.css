@@ -1008,3 +1008,41 @@ body {
     break-inside: avoid;
   }
 }
+
+/* Become a Tutor Banner */
+.become-tutor-banner {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.become-tutor-banner h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.become-tutor-banner p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+.become-tutor-banner__link {
+  display: inline-block;
+  background: #ffffff;
+  color: var(--primary-dark);
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.become-tutor-banner__link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
