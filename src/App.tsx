@@ -18,6 +18,7 @@ const App = () => {
   const [dayFilter, setDayFilter] = useState<Day>("");
   const [loading, setLoading] = useState(true);
   const [filtering, setFiltering] = useState(false);
+  const [lastUpdated, setLastUpdated] = useState("");
 
   // Fetch data on component mount
   useEffect(() => {
@@ -26,6 +27,7 @@ const App = () => {
       .then((response) => response.json())
       .then((data) => {
         setTutors(data.tutors);
+        if (data.lastUpdated) setLastUpdated(data.lastUpdated);
         setLoading(false);
       })
       .catch((error) => {
@@ -195,6 +197,16 @@ const App = () => {
         </InfoSection>
 
         <div>
+          {lastUpdated && (
+            <p className="last-updated">
+              Last updated:{" "}
+              {new Date(lastUpdated + "T00:00:00").toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </p>
+          )}
           <FilterBar
             selectedCourse={courseFilter}
             selectedDay={dayFilter}

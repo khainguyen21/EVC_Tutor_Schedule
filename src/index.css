@@ -1009,6 +1009,15 @@ body {
   }
 }
 
+/* Last Updated Timestamp */
+.last-updated {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-align: right;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
 /* Become a Tutor Banner */
 .become-tutor-banner {
   background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));

@@ -1,4 +1,5 @@
 {
+  "lastUpdated": "2026-02-09",
   "tutors": [
     {
       "name": "Ngoc Ha Nguyen",
@@ -8,6 +9,12 @@
           "day": "Monday",
           "startTime": "11:00",
           "endTime": "14:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "10:30",
+          "endTime": "12:30",
           "location": "LE-237"
         },
         {
@@ -56,18 +63,12 @@
     },
     {
       "name": "Luzele Alvarado",
-      "subjects": ["Art 090", "English 1A", "English 1C", "Sociology 010"],
+      "subjects": ["Art 090", "English 1A", "English 1C", "Sociology 010", "Ethnic Studies"],
       "schedule": [
         {
           "day": "Monday",
           "startTime": "09:00",
           "endTime": "12:00",
-          "location": "LE-237"
-        },
-        {
-          "day": "Tuesday",
-          "startTime": "09:00",
-          "endTime": "11:30",
           "location": "LE-237"
         },
         {
@@ -170,24 +171,24 @@
     },
     {
       "name": "Ngoc Le",
-      "subjects": ["CHEM 015", "CHEM 30A", "CHEM 1A", "MATH 020", "MATH 021", "MATH 022", "MATH 025", "MATH 062", "MATH 066", "MATH 067", "MATH 071", "MATH 072", "PHYSICS 2A", "PHYSICS 7A"],
+      "subjects": ["CHEM 015", "CHEM 30A", "CHEM 1A", "MATH 020", "MATH 021", "MATH 022", "MATH 025", "MATH 062", "MATH 066", "MATH 067", "MATH 071", "MATH 072"],
       "schedule": [
         {
           "day": "Tuesday",
-          "startTime": "10:00",
-          "endTime": "10:45",
+          "startTime": "09:00",
+          "endTime": "13:00",
           "location": "MS-112"
         },
         {
           "day": "Thursday",
-          "startTime": "10:00",
-          "endTime": "10:45",
+          "startTime": "09:00",
+          "endTime": "13:00",
           "location": "MS-112"
         },
         {
           "day": "Friday",
           "startTime": "09:00",
-          "endTime": "14:00",
+          "endTime": "13:00",
           "location": "MS-112"
         }
       ]
@@ -198,14 +199,14 @@
       "schedule": [
         {
           "day": "Monday",
-          "startTime": "13:35",
-          "endTime": "16:00",
+          "startTime": "12:30",
+          "endTime": "15:30",
           "location": "MS-112"
         },
         {
           "day": "Wednesday",
-          "startTime": "13:35",
-          "endTime": "16:00",
+          "startTime": "12:30",
+          "endTime": "15:30",
           "location": "MS-112"
         },
         {
@@ -271,13 +272,13 @@
         {
           "day": "Tuesday",
           "startTime": "09:00",
-          "endTime": "11:30",
+          "endTime": "12:00",
           "location": "MS-112"
         },
         {
           "day": "Thursday",
-          "startTime": "13:00",
-          "endTime": "15:00",
+          "startTime": "17:00",
+          "endTime": "19:00",
           "location": "MS-112"
         },
         {
@@ -308,7 +309,7 @@
     },
     {
       "name": "Quang Le",
-      "subjects": ["English 1A", "English 1B", "English 1C", "Psychology 1", "Psychology 92", "Vietnamese"],
+      "subjects": ["English 1A", "English 1B", "English 1C", "Psychology 1", "Psychology 92", "Vietnamese", "Ethnic Studies"],
       "schedule": [
         {
           "day": "Monday",
@@ -398,6 +399,24 @@
           "day": "Friday",
           "startTime": "09:00",
           "endTime": "13:00",
+          "location": "LE-237"
+        }
+      ]
+    },
+    {
+      "name": "Hai Tran",
+      "subjects": ["ESL"],
+      "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "13:00",
+          "endTime": "17:00",
+          "location": "LE-237"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "9:00",
+          "endTime": "12:00",
           "location": "LE-237"
         }
       ]
@@ -494,7 +513,7 @@
     },
     {
       "name": "Tarun Dorairaj",
-      "subjects": ["MATH 73 and below", "PHYSICS 2A", "PHYSICS 7A", "PHYSICS 7B"],
+      "subjects": ["MATH 73 and below", "PHYSICS 2A", "PHYSICS 4A", "PHYSICS 4B"],
       "schedule": [
         {
           "day": "Tuesday",
@@ -544,6 +563,18 @@
       "name": "Ho Thao Nguyen",
       "subjects": ["MATH STAT C1000"],
       "schedule": [
+        {
+          "day": "Tuesday",
+          "startTime": "12:00",
+          "endTime": "15:00",
+          "location": "MS-112"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "17:00",
+          "location": "MS-112"
+        },
         {
           "day": "Thursday",
           "startTime": "11:00",

@@ -28,6 +28,8 @@ export function getFieldFromSubject(subject: string): string {
   
   if (upperSubject.includes('ENGLISH') || upperSubject === 'ESL') return 'English';
   
+  if (upperSubject.includes('ETH')) return 'Ethnic Studies';
+  
   if (upperSubject === 'PHYSICS' || upperSubject.includes('PHYSIC')) return 'Physics';
   
   if (upperSubject.includes('HISTORY')) return 'History';
