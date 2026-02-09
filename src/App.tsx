@@ -277,7 +277,7 @@ const App = () => {
         <section className="become-tutor-banner">
           <h2>Become an EVC Tutor</h2>
           <p>
-            Now hiring student tutors for Spring 2026! Earn{" "}
+            Now hiring student tutors! Earn{" "}
             <strong>$18.00/hour</strong> while helping fellow students.
           </p>
           <Link to="/become-a-tutor" className="become-tutor-banner__link">

@@ -28,7 +28,11 @@ const BecomeATutor = () => {
         <InfoSection
           title="Become an EVC Tutor"
           intro={
-            "Now hiring student tutors for Spring 2026! This is a great way to refresh your knowledge, earn money, help fellow students, and work a weekly schedule based on YOUR AVAILABILITY."
+            <>
+              This is a great way to refresh your knowledge, earn money, help
+              fellow students, and work a weekly schedule based on{" "}
+              <strong>YOUR AVAILABILITY</strong>.
+            </>
           }
         >
           <div className="info-section__highlight">
