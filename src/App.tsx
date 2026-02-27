@@ -11,6 +11,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import InfoSection from "./components/InfoSection";
 import ScrollToTop from "./components/ScrollToTop";
+import TutoringRules from "./components/TutoringRules";
 
 const App = () => {
   const [tutors, setTutors] = useState<Tutor[]>([]);
@@ -103,7 +104,7 @@ const App = () => {
               fontSize: "1.1rem",
             }}
           >
-            🏫 On-Campus Locations
+            On-Campus Locations
           </h3>
           <p
             style={{
@@ -153,7 +154,7 @@ const App = () => {
               fontSize: "1.1rem",
             }}
           >
-            💻 NetTutor Online Tutoring
+            NetTutor Online Tutoring
           </h3>
           <p style={{ marginBottom: "16px", lineHeight: 1.7 }}>
             EVC students can access <strong>NetTutor</strong> for all subjects
@@ -195,6 +196,8 @@ const App = () => {
             </a>
           </p>
         </InfoSection>
+
+        <TutoringRules />
 
         <div>
           {lastUpdated && (
@@ -277,8 +280,8 @@ const App = () => {
         <section className="become-tutor-banner">
           <h2>Become an EVC Tutor</h2>
           <p>
-            Now hiring student tutors! Earn{" "}
-            <strong>$18.00/hour</strong> while helping fellow students.
+            Now hiring student tutors! Earn <strong>$18.00/hour</strong> while
+            helping fellow students.
           </p>
           <Link to="/become-a-tutor" className="become-tutor-banner__link">
             Learn More & Apply →
