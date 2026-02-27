@@ -19,7 +19,7 @@ const FilterBar = ({
     <section className="filter">
       <div className="filter__group">
         <label className="filter__label" htmlFor="course-filter">
-          Filter by Course
+          Need help? Which subject?
         </label>
         <select
           id="course-filter"
@@ -29,29 +29,34 @@ const FilterBar = ({
         >
           <option value="">All Courses</option>
           {subjects.map((subject) => {
-            return <option value={subject}>{subject}</option> 
+            return <option value={subject}>{subject}</option>;
           })}
         </select>
       </div>
 
       <div className="filter__group">
-        <label htmlFor="day-filter" className="filter__label">
-          Filter by Day
-        </label>
-        <select
-          name="filter__select"
-          id="day-filter"
-          className="filter__select"
-          value={selectedDay}
-          onChange={(e) => onDayChange(e.target.value as Day)}
-        >
-          <option value="">All Days</option>
-          <option value="Monday">Monday</option>
-          <option value="Tuesday">Tuesday</option>
-          <option value="Wednesday">Wednesday</option>
-          <option value="Thursday">Thursday</option>
-          <option value="Friday">Friday</option>
-        </select>
+        <label className="filter__label">When are you coming to campus?</label>
+        <div className="day-pills">
+          {(
+            [
+              "",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+            ] as const
+          ).map((day) => (
+            <button
+              key={day}
+              className={`day-pill ${selectedDay === day ? "day-pill--active" : ""}`}
+              onClick={() => onDayChange(day as Day)}
+              aria-pressed={selectedDay === day}
+            >
+              {day === "" ? "Any Day" : day.slice(0, 3)}
+            </button>
+          ))}
+        </div>
       </div>
     </section>
   );

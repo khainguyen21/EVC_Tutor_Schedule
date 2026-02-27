@@ -247,6 +247,7 @@ const App = () => {
                         key={field}
                         fieldName={field}
                         tutors={filteredTutors}
+                        selectedDay={dayFilter || undefined}
                       />
                     );
                   });

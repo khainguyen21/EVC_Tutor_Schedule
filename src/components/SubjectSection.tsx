@@ -1,4 +1,4 @@
-import type { Tutor } from "../types";
+import type { Tutor, Day } from "../types";
 import {
   filterSubjectsByField,
   getLocationForField,
@@ -9,9 +9,10 @@ import TutorCard from "./TutorCard";
 interface Props {
   fieldName: string;
   tutors: Tutor[];
+  selectedDay?: Day;
 }
 
-const SubjectSection = ({ fieldName, tutors }: Props) => {
+const SubjectSection = ({ fieldName, tutors, selectedDay }: Props) => {
   const location = getLocationForField(fieldName);
   const sortedTutors = sortTutorsByType(tutors);
   return (
@@ -31,6 +32,7 @@ const SubjectSection = ({ fieldName, tutors }: Props) => {
               key={tutor.name}
               tutor={tutor}
               displaySubjects={displaySubjects}
+              selectedDay={selectedDay}
             />
           );
         })}
