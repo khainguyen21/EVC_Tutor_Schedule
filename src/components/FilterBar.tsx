@@ -53,7 +53,7 @@ const FilterBar = ({
               onClick={() => onDayChange(day as Day)}
               aria-pressed={selectedDay === day}
             >
-              {day === "" ? "Any Day" : day.slice(0, 3)}
+              {day === "" ? "Any Day" : day.slice(0, day.length)}
             </button>
           ))}
         </div>

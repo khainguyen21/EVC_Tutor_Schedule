@@ -197,8 +197,6 @@ const App = () => {
           </p>
         </InfoSection>
 
-        <TutoringRules />
-
         <div>
           {lastUpdated && (
             <p className="last-updated">
@@ -262,7 +260,7 @@ const App = () => {
                   ) : (
                     <div className="no-results">
                       <p>
-                        No tutors found for {courseFilter || "these filters"}{" "}
+                        Sorry, no tutors found for {courseFilter || "these filters"}{" "}
                         course
                         {dayFilter && ` on ${dayFilter}`}. Please try different
                         day!
@@ -278,6 +276,9 @@ const App = () => {
             </section>
           )}
         </div>
+
+        <TutoringRules />
+
         <section className="become-tutor-banner">
           <h2>Become an EVC Tutor</h2>
           <p>
