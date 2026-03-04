@@ -11,7 +11,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import InfoSection from "./components/InfoSection";
 import ScrollToTop from "./components/ScrollToTop";
-import TutoringRules from "./components/TutoringRules";
 
 const App = () => {
   const [tutors, setTutors] = useState<Tutor[]>([]);
@@ -339,15 +338,31 @@ const App = () => {
           )}
         </div>
 
-        <TutoringRules />
+        <section
+          className="action-banner"
+          style={{
+            background:
+              "linear-gradient(135deg, var(--accent-green), var(--primary-dark))",
+            marginBottom: "32px",
+          }}
+        >
+          <h2>General Information & MSRC Rules</h2>
+          <p>
+            Hours, registration, and dos & don'ts for the MATH and SCIENCE
+            RESOURCE CENTER.
+          </p>
+          <Link to="/tutoring-rules" className="action-banner__link">
+            View Rules & Hours →
+          </Link>
+        </section>
 
-        <section className="become-tutor-banner">
+        <section className="action-banner">
           <h2>Become an EVC Tutor</h2>
           <p>
             Now hiring student tutors! Earn <strong>$18.00/hour</strong> while
             helping fellow students.
           </p>
-          <Link to="/become-a-tutor" className="become-tutor-banner__link">
+          <Link to="/become-a-tutor" className="action-banner__link">
             Learn More & Apply →
           </Link>
         </section>
