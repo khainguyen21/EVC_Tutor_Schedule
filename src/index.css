@@ -889,6 +889,50 @@ body {
   100% { transform: rotate(360deg); }
 }
 
+/* Empty State Animations */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 250px;
+  gap: 16px;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.empty-state-icon {
+  color: var(--border-color);
+  animation: floatingIcon 3s ease-in-out infinite;
+}
+
+@keyframes floatingIcon {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Search Clear Button */
+.filter__clear-button {
+  padding: 6px 12px;
+  background-color: var(--background-secondary);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.filter__clear-button:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
 /* Creative "Modern Refresh" transition when filters change */
 .schedule {
   transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);

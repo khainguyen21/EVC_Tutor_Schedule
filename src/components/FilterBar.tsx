@@ -15,12 +15,36 @@ const FilterBar = ({
   onCourseChange,
   onDayChange,
 }: Props) => {
+  const hasFilters = selectedCourse !== "" || selectedDay !== "";
+
+  const handleClearAll = () => {
+    onCourseChange("");
+    onDayChange("");
+  };
+
   return (
     <section className="filter">
       <div className="filter__group">
-        <label className="filter__label" htmlFor="course-filter">
-          Need help? Which subject?
-        </label>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <label className="filter__label" htmlFor="course-filter">
+            Need help? Which subject?
+          </label>
+          {hasFilters && (
+            <button
+              onClick={handleClearAll}
+              className="filter__clear-button"
+              aria-label="Clear all filters"
+            >
+              Clear Filters
+            </button>
+          )}
+        </div>
         <select
           id="course-filter"
           className="filter__select"
@@ -29,7 +53,11 @@ const FilterBar = ({
         >
           <option value="">All Courses</option>
           {subjects.map((subject) => {
-            return <option value={subject}>{subject}</option>;
+            return (
+              <option key={subject} value={subject}>
+                {subject}
+              </option>
+            );
           })}
         </select>
       </div>

@@ -69,15 +69,32 @@ const App = () => {
   const sortedFieldsToShow = sortSubjectAlphabetically(fieldsToShow);
 
   // Functions to handle state updates
+  const scrollToSchedule = () => {
+    setTimeout(() => {
+      const scheduleSection = document.getElementById("schedule-section");
+      if (scheduleSection) {
+        // Scroll so the filter bar is just at the top of the viewport
+        const yOffset = -20; // Slight padding above the filter bar
+        const y =
+          scheduleSection.getBoundingClientRect().top +
+          window.scrollY +
+          yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    }, 50); // Small delay to allow DOM updates
+  };
+
   const handleCourseChange = (course: string) => {
     setCourseFilter(course);
-    setFiltering(true);
-    setTimeout(() => setFiltering(false), 300);
+    setFiltering(true); // Trigger the filtering animation
+    setTimeout(() => setFiltering(false), 300); // End the animation after 300ms
+    scrollToSchedule();
   };
   const handleDayChange = (day: Day) => {
     setDayFilter(day);
-    setFiltering(true);
-    setTimeout(() => setFiltering(false), 300);
+    setFiltering(true); // Trigger the filtering animation
+    setTimeout(() => setFiltering(false), 300); // End the animation after 300ms
+    scrollToSchedule();
   };
 
   // console.log(fieldsToShow)
@@ -197,7 +214,7 @@ const App = () => {
           </p>
         </InfoSection>
 
-        <div>
+        <div id="schedule-section">
           {lastUpdated && (
             <p className="last-updated">
               Last updated:{" "}
@@ -258,19 +275,64 @@ const App = () => {
                   return hasTutors ? (
                     sections
                   ) : (
-                    <div className="no-results">
+                    <div className="no-results empty-state">
+                      <svg
+                        className="empty-state-icon"
+                        width="64"
+                        height="64"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                        />
+                      </svg>
                       <p>
-                        Sorry, no tutors found for {courseFilter || "these filters"}{" "}
-                        course
-                        {dayFilter && ` on ${dayFilter}`}. Please try different
-                        day!
+                        It looks like no tutors are here for{" "}
+                        <strong style={{ color: "var(--primary-color)" }}>
+                          {courseFilter || "these filters"}
+                        </strong>
+                        {dayFilter && ` on `}
+                        {dayFilter && (
+                          <strong style={{ color: "var(--primary-color)" }}>
+                            {dayFilter}
+                          </strong>
+                        )}
+                        . Try {dayFilter ? "another day" : "clearing filters"}!
                       </p>
                     </div>
                   );
                 })() // This is an arrow function, therefore we need to call it by adding () at the end
               ) : (
-                <div className="no-results">
-                  <p>Sorry, no tutors found for these filters</p>
+                <div className="no-results empty-state">
+                  <svg
+                    className="empty-state-icon"
+                    width="64"
+                    height="64"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 13h6"
+                    />
+                  </svg>
+                  <p>
+                    Sorry, no tutors found for these filters. Try 'Clear
+                    Filters' above!
+                  </p>
                 </div>
               )}
             </section>
