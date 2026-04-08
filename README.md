@@ -1,74 +1,83 @@
-# React + TypeScript + Vite
+# EVC Tutor Schedule
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive React/TypeScript web application that displays the latest tutor schedule for Evergreen Valley College (EVC). Students can filter by course or day to find FREE tutoring help, and view important resource center rules and information. Built for students, by a student — deployable via Vite.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Modern UI:** Clean React-based interface with dark mode toggle and mobile-friendly design.
+- **Course & Day Filtering:** Quickly drill down to find the right tutor for your course and your availability.
+- **Subject Grouping:** Tutors displayed in subject sections (e.g., Math, Physics, Accounting, etc.).
+- **Evergreen Data:** Pulls tutor schedules from a central JSON file (`/public/data/schedule.json`) for easy updates.
+- **Informational Pages:** Additional sections for becoming a tutor and tutor center rules.
+- **Accessible:** Color-coded schedules and simple navigation for all users.
+- **Easy Theming:** Built-in light/dark mode switcher.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Quick Start
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. **Clone the Repo**
+    ```bash
+    git clone https://github.com/khainguyen21/EVC_Tutor_Schedule.git
+    cd EVC_Tutor_Schedule
+    ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+2. **Install Dependencies**
+    ```bash
+    npm install
+    ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+3. **Start the Development Server**
+    ```bash
+    npm run dev
+    ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Project Structure
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# EVC_Tutor_Schedule
+- **src/**: React application source code
+  - `App.tsx`: Main application file (routing, state, filtering)
+  - `components/`: UI components for header, footer, filtering, subject sections, info pages, etc.
+  - `pages/`: Informational pages ("Become a Tutor," rules)
+  - `utils/`: Subject/coursename mapping utilities
+  - `index.css`: Modern responsive styling
+- **public/data/schedule.json**: Tutor and schedule data
+- **index.html**: App entry point
+
+---
+
+## Data Management
+
+Tutor schedules and details are stored in `public/data/schedule.json`. The UI loads and filters this data using React hooks.
+
+---
+
+## How to Deploy
+
+- Deploy via Vercel, Netlify, or GitHub Pages with Vite static output.
+- Make sure the `public/data/schedule.json` is up to date before pushing changes.
+
+---
+
+## Contributing
+
+Issues and pull requests are welcome!
+- See the [phased project roadmap](PHASES.md) for planned improvements, including backend/API, enhanced mobile experience, and layout improvements.
+- If you’d like to become a contributor or add scheduling features, please reach out.
+
+---
+
+## License
+
+[MIT](LICENSE) — Built for EVC students by [khainguyen21](https://github.com/khainguyen21).
+
+---
+
+## Attribution
+
+This project is not affiliated with Evergreen Valley College. Data and times are as accurate as last updated. Contact the EVC Math & Science Resource Center for the latest schedule.
